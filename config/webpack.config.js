@@ -558,10 +558,10 @@ module.exports = function (webpackEnv) {
             // Make sure to add the new loader(s) before the "file" loader.
           ],
         },
-        {
-          test: /\.scss$/,
-          use: ['style-loader','css-loader','sass-loader']
-        }
+        // {
+        //   test: /\.scss$/,
+        //   use: ['style-loader','css-loader','sass-loader']
+        // }
       ].filter(Boolean),
       
     },

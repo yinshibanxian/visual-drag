@@ -1,0 +1,11 @@
+.toolbar {
+    padding: 15px 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.operate-btn {
+    margin-right: 5px;
+}
