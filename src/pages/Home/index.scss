@@ -29,6 +29,10 @@
             height: 100%;
             overflow: auto;
             padding: 20px;
+            .content {
+                height: 100%;
+                width: 100%;
+            }
         }
     }
 }
