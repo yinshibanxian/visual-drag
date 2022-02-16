@@ -3,7 +3,7 @@ import { RootState, AppThunk } from '../..';
 
 
 export type TextComponent = {
-    component: string;
+    component: 'text';
     label: string;
     propValue: string;
     icon: string;
@@ -14,13 +14,13 @@ export type TextComponent = {
         fontWeight: number;
         lineHeight: string;
         letterSpacing: number;
-        textAlign: string;
+        textAlign: any;
         color: string;
     }
 }
 
 export type ButtonComponent = {
-    component: string; 
+    component: 'button'; 
     label: string;
     propValue: string;
     icon: string;
@@ -41,7 +41,7 @@ export type ButtonComponent = {
 };
 
 export type PictureComponent =  {
-    component: string; 
+    component: 'picture'; 
     label: string;
     icon: string;
     propValue: string;
@@ -51,6 +51,8 @@ export type PictureComponent =  {
         borderRadius: string;
     },
 };
+
+export type ComponentType = 'text' | 'picture' | 'button';
 
 export type Component = TextComponent | PictureComponent | ButtonComponent;
 

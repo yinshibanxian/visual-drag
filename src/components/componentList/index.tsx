@@ -17,7 +17,7 @@ export const commonStyle = {
 // 编辑器左侧组件列表
 const list = [
     {
-        component: 'v-text',
+        component: 'text',
         label: '文字',
         propValue: '双击编辑文字',
         icon: 'wenben',
@@ -33,7 +33,7 @@ const list = [
         },
     },
     {
-        component: 'v-button', 
+        component: 'button', 
         label: '按钮', 
         propValue: '按钮',
         icon: 'button',
@@ -53,7 +53,7 @@ const list = [
         },
     },
     {
-        component: 'Picture', 
+        component: 'picture', 
         label: '图片', 
         icon: 'tupian',
         // propValue: require('@/assets/title.jpg'),

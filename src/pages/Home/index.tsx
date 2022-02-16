@@ -3,9 +3,9 @@ import './index.scss';
 import ToolBar from '../../components/toolbar';
 import ComponentList, { componentList as list } from '../../components/componentList';
 import { useAppSelector, useAppDispatch } from '../../store';
-import { componentList, addComponent } from '../../store/reducers/component';
+import { componentList, addComponent, Component } from '../../store/reducers/component';
 import _ from 'lodash';
-import { Component } from '../../store/reducers/component/index';
+import Editor from '../../components/editor';
 
 
 const Home: React.FunctionComponent = () => {
@@ -44,7 +44,9 @@ const Home: React.FunctionComponent = () => {
                         className='content' onDragOver={handleDragOver} 
                         onDrop={handleDrop}
                         ref={editorRef}
-                    />
+                    >
+                        <Editor />
+                    </div>
                 </section>
                 <section className='right'></section>
             </main>
